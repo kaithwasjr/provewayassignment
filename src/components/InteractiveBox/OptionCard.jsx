@@ -13,7 +13,7 @@ export const options = [
     discount: 20,
     price: 18.0,
     oldPrice: 24.0,
-    isMostPopular: true, // Add a flag for "Most Popular"
+    isMostPopular: true, 
   },
   {
     id: 3,
