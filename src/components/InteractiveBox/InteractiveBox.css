@@ -1,0 +1,389 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.bogo-container {
+  width: 341px;
+  max-width: 341px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  color: #f06c9b;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  /* Set width to match other divs */
+}
+
+h2::before,
+h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 100px);
+  /* Adjust width to balance lines */
+  height: 1px;
+  background-color: #ddd;
+}
+
+h2::before {
+  left: 0;
+}
+
+h2::after {
+  right: 0;
+}
+
+
+
+h2 {
+  color: #f06c9b;
+  margin-bottom: 20px;
+}
+
+.option-card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 15px;
+  position: relative;
+  /* Essential for positioning the badge */
+  cursor: pointer;
+  height: auto;
+  min-height: 60px;
+}
+
+.option-card .badge-most-popular {
+  display: flex;
+  position: absolute;
+  top: -8px;
+  right: 3.5px;
+  background: #FF6B82;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 119px;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  border-radius: 0px 0px 4px 4px;
+  opacity: 0px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.52px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+
+}
+
+.option-card .badge-most-popular-svg {
+  top: -16px;
+  right: -22px;
+  position: absolute;
+
+}
+.option-card-inner {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.option-card.selected {
+  background-color: #fff7f7;
+  border-color: #f06c9b;
+}
+
+.option-card input[type="radio"] {
+  margin-right: 10px;
+}
+
+
+.option-card label {
+  font-size: 9.94px;
+  font-weight: 400;
+  /* Adjust text size if necessary */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.badge {
+  background-color: #f06c9b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 3px 8px;
+  margin-right: 10px;
+
+}
+
+.popular-badge {
+  background-color: #f06c9b;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: 10px;
+  font-weight: 400;
+  color: #999;
+}
+
+.dropdowns {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 40%;
+}
+
+.dropdowns select {
+  width: 65.98px;
+  height: 25.31px;
+  font-size: 10.85px;
+  font-weight: 400;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+  /* Removes default styling for Safari */
+  appearance: none;
+  /* Removes default styling for modern browsers */
+  background-color: white;
+  /* Ensures white background */
+  background: white url('data:image/svg+xml;charset=UTF-8,<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.2632 4.41797L0.915051 0.350854L5.61135 0.350855L3.2632 4.41797Z" fill="black"/></svg>') no-repeat right 5px center;
+  /* White background with custom arrow */
+  background-size: 6px 5px;
+  /* Arrow size */
+  padding-left: 5px;
+  /* Text starts 5px from left */
+  padding-right: 20px;
+  /* Space for the arrow */
+  cursor: pointer;
+  /* Pointer for interactivity */
+}
+
+.dropdowns select:focus {
+  outline: none;
+  /* Removes focus outline */
+  border-color: #aaa;
+  /* Optional: Changes border color on focus */
+}
+
+
+.summary {
+  text-align: left;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary p {
+  margin: 5px 0;
+}
+
+.summary p strong {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.add-to-cart {
+  background-color: #f06c9b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-to-cart:hover {
+  background-color: #e95985;
+}
+
+.powered-by {
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+  margin-top: 10px;
+  width: 100%;
+  text-align: end;
+}
+
+.optionfirstdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+  width: 50%;
+}
+
+.standard {
+  font-size: 15px;
+}
+
+.oneunit {
+
+  font-size: 14px;
+
+}
+
+.firstdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.firstdivsec1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.usdfirst {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  align-items: start;
+  gap: 5px;
+  margin: 0;
+}
+
+.usdfirststrong {
+  font-size: 14.46px;
+}
+
+.optioncardseconddiv {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdownfirst {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dropdownparent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdownsecondparent {
+  display: flex;
+  align-items: center;
+}
+
+.counttext {
+  margin: 0px;
+  font-size: 9.04px;
+  font-weight: 400;
+}
+
+.counttextparentdiv {
+  display: flex;
+  flex-direction: column;
+  height: 66px;
+  gap: 18px;
+  justify-content: end;
+}
+
+.dropdownstopparentdiv {
+  width: 90%;
+  padding-left: 6%;
+
+}
+
+.freedelivery {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e95985;
+}
+
+
+
+/* General styling for radio buttons */
+input[type="radio"] {
+  appearance: none;
+  /* Remove default styles */
+  width: 17px;
+  height: 17px;
+  border: 2px solid #ccc;
+  /* Default border color */
+  border-radius: 50%;
+  /* Make it circular */
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  /* Required for positioning the pseudo-elements */
+}
+
+/* When the radio button is selected */
+input[type="radio"]:checked {
+  border-color: #f06c9b;
+  /* Pink border color */
+  background-color: white;
+  /* Pink fill color */
+}
+
+/* Add the tick mark inside the radio button when it's selected */
+input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 3px auto;
+  /* Creates space between the border and tick */
+  border-radius: 50%;
+  background-color: #f06c9b;
+  /* White tick color */
+}
+
+.standard-price {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+  /* To make the text visible over the black background */
+  /* Optional for better visibility */
+}
